@@ -13,4 +13,5 @@ rm pkgj-v*.vpk
 wget https://github.com/blastrock/pkgj/releases/download/v$version/pkgj.vpk -O pkgj-v$version.vpk
 
 git add version pkgj-v$version.vpk -u
-git commit --amend --no-edit
+git commit -m "Push v$version"
+git push origin last
