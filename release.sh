@@ -12,6 +12,7 @@ echo -n $version > version
 rm pkgj-v*.vpk
 wget https://github.com/blastrock/pkgj/releases/download/v$version/pkgj.vpk -O pkgj-v$version.vpk
 
+git add -u
 git add version pkgj-v$version.vpk
 git commit -m "Push v$version"
 git push origin last
