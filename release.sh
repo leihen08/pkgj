@@ -10,7 +10,7 @@ version=$1
 echo -n $version > version
 
 rm pkgj-v*.vpk
-wget https://github.com/blastrock/pkgj/releases/download/v$version/pkgj.vpk -O pkgj-v$version.vpk
+cp ci/build/pkgj.vpk pkgj-v$version.vpk
 
 git add -u
 git add version pkgj-v$version.vpk
