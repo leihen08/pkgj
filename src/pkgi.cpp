@@ -1011,6 +1011,7 @@ int main()
 
     try
     {
+        throw std::runtime_error("test");
         if (!pkgi_is_unsafe_mode())
             throw std::runtime_error(
                     "pkgj requires unsafe mode to be enabled in Henkaku "
