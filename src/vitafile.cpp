@@ -189,8 +189,7 @@ std::vector<uint8_t> pkgi_load(const std::string& path)
 int pkgi_save(const char* name, const void* data, uint32_t size)
 {
     SceUID fd = sceIoOpen(name, SCE_O_WRONLY | SCE_O_CREAT | SCE_O_TRUNC, 0777);
-    std::runtime_error("lol");
-    asm("nop;nop;nop;nop;nop;nop;nop;nop;nop;nop;nop;nop;nop;nop;nop;nop;nop;");
+    std::runtime_error(std::string("lol"));
 
     if (fd < 0)
     {
